@@ -9,6 +9,9 @@
     "release": "release-it",
     "test": "jest"
   },
+  "bin": {
+    "update-xcodeproj-version": "./bin/update-xcodeproj-version.js"
+  },
   "keywords": ["xcodeproj", "xcode", "version", "update", "build", "marketing", "versioning"],
   "author": "Kwonkunkun",
   "repository": {
