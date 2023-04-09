@@ -1,5 +1,12 @@
 
 
+## [1.1.1](https://github.com/Kwonkunkun/update-xcodeproj-version/compare/v1.1.0...v1.1.1) (2023-04-09)
+
+
+### Bug Fixes
+
+* **npm ignore:** add .npmignore becuase upload not nessasary files in npm module ([af0cb60](https://github.com/Kwonkunkun/update-xcodeproj-version/commit/af0cb60000a25800c6863c77a0e5e85a4d93a12b))
+
 ## 1.1.0 (2023-04-09)
 
 
