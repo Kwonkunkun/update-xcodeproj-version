@@ -9,9 +9,14 @@
     "release": "release-it",
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["xcodeproj", "xcode", "version", "update", "build", "marketing", "versioning"],
+  "author": "Kwonkunkun",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kwonkunkun/update-xcodeproj-version"
+  },
+  "homepage": "https://github.com/Kwonkunkun/update-xcodeproj-version",
+  "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",

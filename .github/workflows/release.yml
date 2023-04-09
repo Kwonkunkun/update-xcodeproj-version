@@ -1,0 +1,34 @@
+name: release
+on:
+  push:
+    branches:
+      - main
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+jobs:
+  deploy:
+    name: write release notes
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # 이건 release-it setting 을 위해서 작성됨
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "14"
+
+      - name: git config
+        run: |
+          git config user.name "Kwonkunkun"
+          git config user.email "kunwoo5012@naver.com"
+
+      - name: Install dependencies
+        run: npm i
+
+      - name: run release-it
+        run: npm run release
