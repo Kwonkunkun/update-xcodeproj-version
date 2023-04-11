@@ -14,15 +14,13 @@ const updateXcodeMarketingVersion = async (path, newVersion, buildVersionReset) 
     const file = await asyncFs.readFile(path, 'utf8');
 
     //replace and make newFile
-    const regex = /MARKETING_VERSION = \d+\.\d+\.\d+;/g;
-    let newFile = file.replace(regex, () => {
+    let newFile = file.replace(/MARKETING_VERSION = \d+\.\d+\.\d+;/g, () => {
       return `MARKETING_VERSION = ${newVersion};`;
     });
 
     //reset build version
     if (buildVersionReset) {
-      const regex = /CURRENT_PROJECT_VERSION\s*=\s*\d+;/g;
-      newFile = file.replace(regex, () => {
+      newFile = newFile.replace(/CURRENT_PROJECT_VERSION\s*=\s*\d+;/g, () => {
         return `CURRENT_PROJECT_VERSION = 1;`;
       });
     }

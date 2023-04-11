@@ -17,14 +17,11 @@ const execPromise = (command) => {
 
 describe('updateXcodeBuildVersion', () => {
   beforeEach(async () => {
-    await execPromise(`node ${path.join(__dirname, '../bin/update-xcodeproj-version.js')} ${filePath} 1.0.2`);
-  });
-
-  afterEach(async () => {
     await execPromise(`node ${path.join(__dirname, '../bin/update-xcodeproj-version.js')} ${filePath} 1.0.0`);
   });
 
   it('should update the build version', async () => {
+    await execPromise(`node ${path.join(__dirname, '../bin/update-xcodeproj-version.js')} ${filePath} 1.0.2`);
     const version = await getMarketingVersion(filePath);
     expect(version).toBe('1.0.2');
   });
