@@ -1,7 +1,9 @@
 const { exec } = require('child_process');
 const { getMarketingVersion } = require('../index.js');
 const path = require('path');
-const filePath = path.join(__dirname, 'yourProject.xcodeproj/project.pbxproj');
+const filePath = path.join(__dirname, 'yourProject.xcodeproj', 'project.pbxproj');
+
+console.log(filePath);
 
 const execPromise = (command) => {
   return new Promise((resolve, reject) => {
@@ -17,11 +19,11 @@ const execPromise = (command) => {
 
 describe('updateXcodeBuildVersion', () => {
   beforeEach(async () => {
-    await execPromise(`node ${path.join(__dirname, '../bin/update-xcodeproj-version.js')} ${filePath} 1.0.0`);
+    await execPromise(`update-xcodeproj-ver -p ${filePath} -m 1.0.0`);
   });
 
   it('should update the build version', async () => {
-    await execPromise(`node ${path.join(__dirname, '../bin/update-xcodeproj-version.js')} ${filePath} 1.0.2`);
+    await execPromise(`update-xcodeproj-ver -p ${filePath} -m 1.0.2`);
     const version = await getMarketingVersion(filePath);
     expect(version).toBe('1.0.2');
   });

@@ -121,9 +121,18 @@ const getBuildVersion = async (path) => {
   }
 }
 
+/**
+ * @description get package version
+ */
+const getPackageVersion = () => {
+  const packageJson = require('./package.json');
+  return packageJson.version;
+}
+
 module.exports = {
   updateXcodeMarketingVersion,
   updateXcodeBuildVersion,
   getMarketingVersion,
   getBuildVersion,
+  getPackageVersion
 }

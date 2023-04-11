@@ -8,6 +8,19 @@ npm install update-xcodeproj-version
 ```
 
 ## Usage
+```bash
+$ update-xcodeproj-version --help
+
+  Usage: update-xcodeproj-version [options]
+
+  Options:
+
+    -V, --version          output the version number
+    -p, --path <path>      The path to the project.pbxproj file.
+    -m, --marketing <ver>  The new marketing version you want to set.
+    -r, --reset            If set to true, it will reset the build version to 1.
+    -h, --help             output usage information
+```
 
 ```javascript
 const path = require('path');

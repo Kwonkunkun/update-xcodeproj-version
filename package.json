@@ -10,8 +10,9 @@
     "test": "jest"
   },
   "bin": {
-    "update-xcodeproj-version": "./bin/update-xcodeproj-version.js"
+    "update-xcodeproj-ver": "./bin/update-xcodeproj-ver.js"
   },
+  "readme": "README.md",
   "keywords": [
     "xcodeproj",
     "xcode",
@@ -42,5 +43,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "commander": "^10.0.0"
   }
 }

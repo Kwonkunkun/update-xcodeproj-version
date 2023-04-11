@@ -27,7 +27,7 @@ describe('updateXcodeMarketingVersion', () => {
   });
 
   it('should update the marketing version', async () => {
-    const newVersion = '3.0.0';
+    const newVersion = '2.0.0';
     await updateXcodeMarketingVersion(filePath, newVersion);
     const version = await getMarketingVersion(filePath);
     expect(version).toBe(newVersion);
