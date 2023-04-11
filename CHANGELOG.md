@@ -1,5 +1,12 @@
 
 
+## [1.1.2](https://github.com/Kwonkunkun/update-xcodeproj-version/compare/v1.1.1...v1.1.2) (2023-04-11)
+
+
+### Bug Fixes
+
+* updateXcodeMarketingVersion function bug fix ([661e9d4](https://github.com/Kwonkunkun/update-xcodeproj-version/commit/661e9d40dd239bc04a4eb53ba68b44f74b44f4cf))
+
 ## [1.1.1](https://github.com/Kwonkunkun/update-xcodeproj-version/compare/v1.1.0...v1.1.1) (2023-04-09)
 
 
