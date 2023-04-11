@@ -4,6 +4,6 @@
 .husky
 test
 node_modules
-*.config.js
-*.config.json
+.release-it.json
+commitlint.config.js
 
