@@ -9,9 +9,9 @@ npm install update-xcodeproj-version
 
 ## Usage
 ```bash
-$ update-xcodeproj-version --help
+$ update-xcodeproj-ver --help
 
-  Usage: update-xcodeproj-version [options]
+  Usage: update-xcodeproj-ver [options]
 
   Options:
 
