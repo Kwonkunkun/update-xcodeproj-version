@@ -1,6 +1,6 @@
 {
   "name": "update-xcodeproj-version",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "type": "commonjs",
   "description": "update xcodeproj's marketing & build version",
   "main": "index.js",

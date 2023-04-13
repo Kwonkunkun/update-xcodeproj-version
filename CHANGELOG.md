@@ -1,5 +1,13 @@
 
 
+## [1.2.6](https://github.com/Kwonkunkun/update-xcodeproj-version/compare/v1.2.0...v1.2.6) (2023-04-13)
+
+
+### Bug Fixes
+
+* edit husky prepare-commit-msg hook ([a2a876f](https://github.com/Kwonkunkun/update-xcodeproj-version/commit/a2a876fe4a8a9c63727cfc8b981d413a733fae2a))
+* edit prepare-commit-msg of husky hook ([792d57d](https://github.com/Kwonkunkun/update-xcodeproj-version/commit/792d57dee5e1be25dee27833e72c8a64802d4fba))
+
 ## [1.2.0](https://github.com/Kwonkunkun/update-xcodeproj-version/compare/v1.1.2...v1.2.0) (2023-04-11)
 
 
