@@ -1,6 +1,6 @@
 {
   "name": "update-xcodeproj-version",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "type": "commonjs",
   "description": "update xcodeproj's marketing & build version",
   "main": "index.js",
@@ -12,7 +12,6 @@
   "bin": {
     "update-xcodeproj-ver": "./bin/update-xcodeproj-ver.js"
   },
-  "readme": "README.md",
   "keywords": [
     "xcodeproj",
     "xcode",

@@ -74,6 +74,9 @@ Returns a Promise that resolves to the current marketing version of your Xcode p
 
 Returns a Promise that resolves to the current build version of your Xcode project.
 
+### getPackageVersion()
+
+Returns the version of this module.
 
 ## License
 MIT License
