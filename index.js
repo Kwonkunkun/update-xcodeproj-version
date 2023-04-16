@@ -80,15 +80,13 @@ const getMarketingVersion = async (path) => {
 
     //find version
     const regex = /MARKETING_VERSION\s*=\s*([\d.]+);/;
-    let version;
 
     const match = regex.exec(file);
-    if (match) {
-      version = match[1];
-    }else {
-      throw new Error('Cannot find marketing version');
-    }
-    return version;
+
+    //if match[1] is undefined, throw error
+    if(!match[1]) throw new Error('Cannot find marketing version');
+
+    return match[1];
   } catch (e) {
     console.error(e);
   }
