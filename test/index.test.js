@@ -7,7 +7,6 @@ const {
 const path = require('path');
 const filePath = path.join(__dirname, 'yourProject.xcodeproj', 'project.pbxproj');
 
-//TODO: need test before and after
 describe('updateXcodeBuildVersion', () => {
   beforeEach(async () => {
     await updateXcodeBuildVersion(filePath, "1");
